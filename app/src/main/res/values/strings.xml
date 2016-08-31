@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">要出发周边游APP</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="guide_btn">立即体验</string>
+
+    <string name="homepage">首页</string>
+    <string name="single">目的地</string>
+    <string name="match">发现</string>
+    <string name="mine">我的</string>
+
+    <string name="hot_scenic">全国热门景区</string>
+    <string name="hot_city">全国热门城市</string>
+
+
+</resources>

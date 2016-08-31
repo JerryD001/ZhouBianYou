@@ -1,0 +1,55 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--自定义尺寸-->
+    <dimen name="dimension_zero_point_two_dp">0.2dp</dimen>
+    <dimen name="dimension_zero_point_five_dp">0.5dp</dimen>
+    <dimen name="dimension_one_dp">1dp</dimen>
+    <dimen name="dimension_two_dp">2dp</dimen>
+    <dimen name="dimension_three_dp">3dp</dimen>
+    <dimen name="dimension_five_dp">5dp</dimen>
+    <dimen name="dimension_ten_dp">10dp</dimen>
+    <dimen name="dimension_fifteen_dp">15dp</dimen>
+    <dimen name="dimension_twenty_dp">20dp</dimen>
+    <dimen name="dimension_twenty_five_dp">25dp</dimen>
+    <dimen name="dimension_thirty_dp">30dp</dimen>
+    <dimen name="dimension_thirty_five_dp">35dp</dimen>
+    <dimen name="dimension_forty_dp">40dp</dimen>
+    <dimen name="dimension_forty_five_dp">45dp</dimen>
+    <dimen name="dimension_fifty_dp">50dp</dimen>
+    <dimen name="dimension_fifty_five_dp">55dp</dimen>
+    <dimen name="dimension_sixty_dp">60dp</dimen>
+    <dimen name="dimension_sixty_five_dp">65dp</dimen>
+    <dimen name="dimension_seventy_dp">70dp</dimen>
+    <dimen name="dimension_seventy_five_dp">75dp</dimen>
+    <dimen name="dimension_eighty_dp">80dp</dimen>
+    <dimen name="dimension_eighty_five_dp">85dp</dimen>
+    <dimen name="dimension_ninety_dp">90dp</dimen>
+    <dimen name="dimension_ninety_five_dp">95dp</dimen>
+    <dimen name="dimension_hundred_dp">100dp</dimen>
+    <dimen name="dimension_hundred_twenty_dp">120dp</dimen>
+    <dimen name="dimension_hundred_forty_dp">140dp</dimen>
+    <dimen name="dimension_appbar_dp">160dp</dimen>
+
+    <!--自定义字体大小-->
+    <dimen name="text_size_8_sp">8sp</dimen>
+    <dimen name="text_size_9_sp">9sp</dimen>
+    <dimen name="text_size_10_sp">10sp</dimen>
+    <dimen name="text_size_11_sp">11sp</dimen>
+    <dimen name="text_size_12_sp">12sp</dimen>
+    <dimen name="text_size_13_sp">13sp</dimen>
+    <dimen name="text_size_14_sp">14sp</dimen>
+    <dimen name="text_size_15_sp">15sp</dimen>
+    <dimen name="text_size_16_sp">16sp</dimen>
+    <dimen name="text_size_17_sp">17sp</dimen>
+    <dimen name="text_size_18_sp">18sp</dimen>
+    <dimen name="text_size_19_sp">19sp</dimen>
+    <dimen name="text_size_20_sp">20sp</dimen>
+    <dimen name="text_size_21_sp">21sp</dimen>
+    <dimen name="text_size_22_sp">22sp</dimen>
+    <dimen name="text_size_23_sp">23sp</dimen>
+    <dimen name="text_size_24_sp">24sp</dimen>
+    <dimen name="text_size_25_sp">25sp</dimen>
+</resources>

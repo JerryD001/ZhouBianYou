@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/find_findtheme"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:id="@+id/theme_leftimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/theme_title_icon" />
+
+    <TextView
+        android:id="@+id/theme_lefttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimension_ten_dp"
+        android:layout_toRightOf="@id/theme_leftimg"
+        android:text="主题"
+        android:textSize="@dimen/text_size_20_sp" />
+
+    <TextView
+        android:id="@+id/theme_vertical"
+        android:layout_width="0.2dp"
+        android:layout_height="@dimen/dimension_thirty_dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimension_ten_dp"
+        android:layout_toRightOf="@id/theme_lefttv"
+        android:background="@color/tan"
+        android:text="|" />
+
+    <TextView
+        android:id="@+id/theme_verticaltv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimension_ten_dp"
+        android:layout_toRightOf="@id/theme_vertical"
+        android:text="来场不一样的旅游"
+        android:textSize="@dimen/text_size_16_sp" />
+
+
+</RelativeLayout>

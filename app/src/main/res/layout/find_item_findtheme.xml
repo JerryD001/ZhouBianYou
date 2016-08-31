@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/find_findtheme"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:id="@+id/findtheme_leftimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/subject_title_icon" />
+
+    <TextView
+        android:id="@+id/findtheme_lefttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimension_ten_dp"
+        android:layout_toRightOf="@id/findtheme_leftimg"
+        android:text="发现专题"
+        android:textSize="@dimen/text_size_20_sp" />
+
+    <TextView
+        android:id="@+id/findtheme_vertical"
+        android:layout_width="0.2dp"
+        android:layout_height="@dimen/dimension_thirty_dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimension_ten_dp"
+        android:layout_toRightOf="@id/findtheme_lefttv"
+        android:background="@color/tan"
+        android:text="|" />
+
+    <TextView
+        android:id="@+id/findtheme_verticaltv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimension_ten_dp"
+        android:layout_toRightOf="@id/findtheme_vertical"
+        android:text="汇集超值玩点，更多优惠"
+        android:textSize="@dimen/text_size_16_sp" />
+
+    <TextView
+        android:id="@+id/findtheme_righttv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimension_ten_dp"
+        android:layout_marginRight="@dimen/dimension_five_dp"
+        android:layout_toLeftOf="@+id/findtheme_right"
+        android:text="更多"
+        android:textSize="@dimen/text_size_16_sp" />
+
+    <ImageView
+        android:id="@+id/findtheme_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimension_ten_dp"
+        android:background="@drawable/home_more_icon" />
+
+</RelativeLayout>

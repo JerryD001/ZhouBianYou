@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/topimg_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+
+<com.example.xm.zhoubianyouofour.utils.other.customindicator.CircleIndicator
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="15dp"
+    android:id="@+id/find_circleIndicator"
+    android:layout_width="wrap_content"
+    android:layout_height="10dp"
+    app:ci_radius="@dimen/dimension_three_dp"
+    app:ci_gravity="center"
+    app:ci_margin="@dimen/dimension_two_dp"
+    app:ci_mode="solo"
+    app:ci_background="@color/white"
+    app:ci_selected_background="@color/color_selecte"/>
+
+</RelativeLayout>

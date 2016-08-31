@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dest.ui.DestFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.27"
+        android:background="@drawable/destination_head_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.60">
+
+            <RelativeLayout
+                android:id="@+id/dest_header_search"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/destination_search_bar_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="搜索目的地/景点/酒店等..."
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/destination_search_icon" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.35"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/dest_select_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"
+                    android:text="切换地区"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_14_sp"
+                    android:visibility="gone" />
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/dest_tablayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:tabContentStart="0dp"
+                    app:tabIndicatorColor="@color/color_selecte"
+                    app:tabIndicatorHeight="@dimen/dimension_two_dp"
+                    app:tabMaxWidth="55dp"
+                    app:tabMode="scrollable"
+                    app:tabSelectedTextColor="@color/color_selecte"
+                    app:tabTextAppearance="@android:style/TextAppearance.Holo.WindowTitle"
+                    app:tabTextColor="@color/white" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="@dimen/dimension_zero_point_five_dp"
+                android:layout_height="@dimen/dimension_twenty_dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/button_show_popowindow"
+                android:layout_width="@dimen/dimension_sixty_dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/imgbutton_show_popowindow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:clickable="false" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/dest_choose_city_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.73" />
+
+</LinearLayout>

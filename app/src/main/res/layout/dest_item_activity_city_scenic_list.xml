@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="105dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="125dp"
+        android:layout_height="105dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/dest_img_homeimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/dest_image_corner"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/dest_img_homeimage_flag"
+            android:layout_width="40dp"
+            android:layout_height="36dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/dest_productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="珠海御温泉度假村"
+            android:textColor="@color/text_color2"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/dest_productTitleContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dest_productName"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="3dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="[珠海]享盛唐养生温泉，可选庙会大餐/下午茶/按摩/度假/全包套餐。"
+            android:textSize="@dimen/text_size_12_sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/dest_yang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="￥"
+                android:textColor="@color/color_selecte" />
+
+            <TextView
+                android:id="@+id/dest_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/dest_yang"
+                android:text="810"
+                android:textColor="@color/color_selecte"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/find_qi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/dest_price"
+                android:text="起"
+                android:textColor="@color/color_selecte"
+                android:textSize="@dimen/text_size_12_sp" />
+
+            <TextView
+                android:id="@+id/dest_originalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/find_qi"
+                android:text="2888"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/dest_saledCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="已售8255"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

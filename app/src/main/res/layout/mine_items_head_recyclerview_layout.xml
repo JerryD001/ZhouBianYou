@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimension_sixty_dp"
+        android:background="@drawable/my_head_top_bar_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:background="@drawable/my_head_not_signed_bg"
+        >
+
+        <TextView
+            android:id="@+id/text_wait"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimension_sixty_dp"
+            android:text="Hi,等你好久了！"
+            android:gravity="center"
+            android:textColor="@color/bg_fragment"
+            android:textSize="@dimen/dimension_twenty_dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimension_sixty_dp">
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_marginLeft="@dimen/dimension_sixty_five_dp"
+            android:layout_width="110dp"
+            android:layout_height="@dimen/dimension_fifty_dp"
+            android:background="@drawable/my_head_login_btn"
+            android:text="登录"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_20_sp"
+            android:textColor="@color/bg_fragment"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_marginLeft="190dp"
+            android:layout_width="110dp"
+            android:layout_height="@dimen/dimension_fifty_dp"
+            android:background="@drawable/my_head_login_btn"
+            android:text="注册"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_20_sp"
+            android:textColor="@color/bg_fragment"/>
+        </RelativeLayout>
+      </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimension_sixty_dp"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/myScore"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+
+            >
+
+            <ImageView
+                android:layout_marginLeft="50dp"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/evaluate_list_integral_icon"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="积分"
+                />
+        </LinearLayout>
+
+        <View
+
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:background="@color/lightgrey"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:id="@+id/myCashTicket"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                android:layout_marginLeft="50dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_order_list_coupon"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="现金券"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

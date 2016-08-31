@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/login_img_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/mine_top_bar_login_layout"/>
+    <android.support.design.widget.TabLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/login_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:tabSelectedTextColor="@color/color_selecte"
+        app:tabTextColor="@color/darkgray"
+        app:tabIndicatorColor="@color/color_selecte"
+        app:tabTextAppearance="@style/myTabText"
+        >
+        
+    </android.support.design.widget.TabLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/login_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="260dp">
+    </android.support.v4.view.ViewPager>
+
+    <ImageView
+        android:id="@+id/qq_login_head"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_qq_icon"/>
+
+    <TextView
+        android:id="@+id/qq_nickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="昵称"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="QQ登录"
+        android:textColor="@color/darkgray"/>
+
+</LinearLayout>

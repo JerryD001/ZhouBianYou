@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimension_forty_five_dp">
+
+        <TextView
+            android:id="@+id/dest_citysceniclist_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="城市名称"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_16_sp" />
+
+        <ImageView
+            android:id="@+id/dest_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/dimension_fifteen_dp"
+            android:src="@drawable/nav_bar_back_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#E7E7E7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimension_forty_five_dp">
+
+        <RadioGroup
+            android:id="@+id/dest_option_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/dest_btn_order"
+                style="@style/city_spinner"
+                android:text="推荐排序" />
+
+            <RadioButton
+                android:id="@+id/dest_btn_category"
+                style="@style/city_spinner"
+                android:text="全部分类" />
+
+            <RadioButton
+                android:id="@+id/dest_btn_filter"
+                style="@style/city_spinner"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:text="筛选" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#E7E7E7" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dest_city_scenic_list_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+
+</LinearLayout>
